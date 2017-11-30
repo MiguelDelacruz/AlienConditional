@@ -26,28 +26,26 @@ var g = 7000
 var b = 1000
 
 
-function aliens(total) {
-	if  ( r + g + b == 10000){
+function aliens(num) {
+	if  ( num == 10000){
 		return "true"
 	}
-	else if ( g > 5000){
+	else if ( num > 8000){
 		return "MOTHER OF GOD, not the green ones";
 	}
-	else if (g + r > 8000) {
+	else if (num > 5000) {
 		return "DOOOOOM";
 	}
-	else  if (r + b < 3000) {
-		return "We will not go quietly into the night. We will not vanish without a fight. TODAY WE CELEBRATE";	
+	else  if (num < 3000) {
+		return "We will not go quietly into the night. We will not vanish without a fight. TODAY WE CELEBRATE";
 	}
 	else {
 		return output = "set a amount of aliens";
 	}
 }
-var output = aliens(total);
-console.log(output);
 
-function aliens(total) {
-	if (g > 5000) {
-		
-	}
-}
+console.log(aliens(total));
+var mig = g + r;
+console.log(aliens(mig));
+console.log(aliens(g));
+console.log(aliens(b));
