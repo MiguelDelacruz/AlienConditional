@@ -27,10 +27,10 @@ var b = 1000
 
 
 function aliens(total) {
-	if  (total==10000){
-
+	if  ( r + g + b == 10000){
+		return "true"
 	}
-	else if ( g == 5000){
+	else if ( g > 5000){
 		return "MOTHER OF GOD, not the green ones";
 	}
 	else if (g + r > 8000) {
@@ -45,3 +45,9 @@ function aliens(total) {
 }
 var output = aliens(total);
 console.log(output);
+
+function aliens(total) {
+	if (g > 5000) {
+		
+	}
+}
